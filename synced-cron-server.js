@@ -232,6 +232,7 @@ SyncedCron._entryWrapper = function(entry) {
           error: e.stack
         }
       });
+      throw e;
     }
   };
 }

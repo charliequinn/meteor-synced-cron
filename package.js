@@ -1,8 +1,8 @@
 Package.describe({
   summary: "Allows you to define and run scheduled jobs across multiple servers.",
   version: "1.3.0",
-  name: "percolate:synced-cron",
-  git: "https://github.com/percolatestudio/meteor-synced-cron.git"
+  name: "charliequinn:sync-cron",
+  git: "https://github.com/charliequinn/meteor-synced-cron.git"
 });
 
 Npm.depends({later: "1.1.6"});
@@ -15,6 +15,6 @@ Package.onUse(function (api) {
 });
 
 Package.onTest(function (api) {
-  api.use(['percolate:synced-cron', 'tinytest']);
+  api.use(['charliequinn:sync-cron', 'tinytest']);
   api.add_files('synced-cron-tests.js', ['server']);
 });
